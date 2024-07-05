@@ -44,5 +44,6 @@ router.post('/', function (req, res) {
 
 // routes handled for submodules
 router.use('/testroute', require('./testroute'));
+router.use('/testroute1', require('./testroute/testroute1'));
 
 module.exports = router;
