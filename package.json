@@ -1,0 +1,13 @@
+{
+  "name": "single-page-app",
+  "version": "1.0.0",
+  "description": "- [vite](https://vitejs.dev/guide/) + [react](https://react.dev/reference/react)\r - [mui Material UI](https://mui.com/material-ui/getting-started/)",
+  "main": "index.js",
+  "scripts": {
+    "install": "cd server && npm install && echo 'more install'",
+    "startServer": "cd server && npm run start",
+    "startDevServer": "cd server && npm run dev"
+  },
+  "author": "jteske",
+  "license": "ISC"
+}
