@@ -10,6 +10,10 @@ const logger = require('./logger');
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
+const {
+  loginUser,
+  checkAuthMiddleware,
+} = require('./middleware/authentication');
 
 const port = process.env.BACKEND_PORT || 5000;
 
@@ -31,6 +35,8 @@ const middleware1 = (req, res, next) => {
   next();
 };
 
+app.post('/login', loginUser);
+
 // Route Specific Middleware Type 2 - called first
 app.all('/api', (req, res, next) => {
   logger.trace('Call Middleware 2');
@@ -50,12 +56,20 @@ const logFullURLMiddleware = function (req, res, next) {
   next();
 };
 
-// Mount routers
+// Mount open routers
 app.use(
   '/api',
   logFullURLMiddleware,
   middleware1,
-  require('./routes/api/index')
+  require('./routes/api/open.routs')
+);
+
+// Mount protected routers
+app.use(
+  '/api/protected',
+  logFullURLMiddleware,
+  checkAuthMiddleware,
+  require('./routes/api/protected.routs')
 );
 
 // Handle custom direct access tries which are not going to /api
