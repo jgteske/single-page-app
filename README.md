@@ -3,6 +3,7 @@
 ## Frontend
 
 - [vite](https://vitejs.dev/guide/) + [react](https://react.dev/reference/react)
+- [TanStack](https://tanstack.com/router/latest/docs/framework/react/installation)
 - [mui Material UI](https://mui.com/material-ui/getting-started/)
 
 ## Backend
