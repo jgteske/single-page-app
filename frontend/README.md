@@ -22,9 +22,38 @@ export default {
     project: ['./tsconfig.json', './tsconfig.node.json'],
     tsconfigRootDir: __dirname,
   },
-}
+};
 ```
 
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+## Developing
+
+> ! Important to run the dev Server before creating new routes
+
+```bash
+yarn dev
+```
+
+## Build static site
+
+```bash
+yarn build
+```
+
+## Preview static site
+
+```bash
+yarn preview
+```
+
+## Deploy static site
+
+Recommended to create a .zip-Archive and copy this instead of the whole folder.
+
+```bash
+# Tomcat
+cd ./dist/* ./path/to/webapps
+```
