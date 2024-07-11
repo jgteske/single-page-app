@@ -11,3 +11,36 @@
 - [Express.js](https://expressjs.com/de/starter/installing.html)
 - [Logger](https://github.com/winstonjs/winston)
 - [Auth API](https://github.com/jgteske/auth-api)
+
+## Dev
+
+### Dev Server
+
+```powershell
+yarn install
+yarn dev-server
+```
+
+### Dev Frontend
+
+```powershell
+yarn install
+yarn dev-frontend
+```
+
+## Build Static Sites
+
+### Build Server
+
+> Server is static site
+
+`./server`
+
+### Build Frontend
+
+```powershell
+yarn install
+yarn build-frontend
+```
+
+`./frontend/dist/*`
