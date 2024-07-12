@@ -1,0 +1,12 @@
+{
+  "main": {
+    "page": {
+      "nested": {
+        "header": "Welcome to the app!"
+      }
+    }
+  },
+  "buttons": {
+    "language_switcher": "Language"
+  }
+}

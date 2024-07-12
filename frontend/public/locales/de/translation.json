@@ -1,0 +1,12 @@
+{
+  "main": {
+    "page": {
+      "nested": {
+        "header": "Willkommen in der Anwendung!"
+      }
+    }
+  },
+  "buttons": {
+    "language_switcher": "Sprache"
+  }
+}
