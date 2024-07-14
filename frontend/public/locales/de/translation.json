@@ -3,6 +3,10 @@
     "page": {
       "nested": {
         "header": "Willkommen in der Anwendung!"
+      },
+      "about": {
+        "title": "Willkommen in der About Seite",
+        "description": "Beschreibung der About Seite"
       }
     }
   },

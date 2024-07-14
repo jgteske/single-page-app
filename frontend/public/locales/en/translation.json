@@ -3,6 +3,10 @@
     "page": {
       "nested": {
         "header": "Welcome to the app!"
+      },
+      "about": {
+        "title": "Welcome at about",
+        "description": "Description of the about page"
       }
     }
   },
