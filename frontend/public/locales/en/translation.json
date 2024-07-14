@@ -11,7 +11,14 @@
       }
     }
   },
-  "buttons": {
-    "language_switcher": "Language"
+  "dialogs": {
+    "buttons": {
+      "ok": "Ok",
+      "cancel": "Cancel",
+      "save": "Save",
+      "back": "Back",
+      "continue": "Continue",
+      "language_switcher": "Language"
+    }
   }
 }

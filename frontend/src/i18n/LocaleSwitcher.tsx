@@ -11,7 +11,7 @@ import {
 
 export default function LocaleSwitcher(props: BoxProps) {
   const { i18n } = useTranslation();
-  const { t } = useTranslation('buttons');
+  const { t } = useTranslation();
 
   return (
     <Box
@@ -19,7 +19,9 @@ export default function LocaleSwitcher(props: BoxProps) {
       {...props}
     >
       <FormControl fullWidth>
-        <InputLabel id='language-switcher'>{t('language_switcher')}</InputLabel>
+        <InputLabel id='language-switcher'>
+          {t('dialogs:buttons.language_switcher')}
+        </InputLabel>
         <Select
           labelId='language-switcher'
           id='language-switcher'
