@@ -11,6 +11,7 @@ function About() {
     <div className='p-2'>
       <h3>{t('main:page.about.title')}</h3>
       <p>{t('main:page.about.description')}</p>
+      <p>{t('main:page.about.interpolated', { val: 3 })}</p>
     </div>
   );
 }

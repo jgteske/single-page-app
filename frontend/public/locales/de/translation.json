@@ -6,7 +6,8 @@
       },
       "about": {
         "title": "Willkommen in der About Seite",
-        "description": "Beschreibung der About Seite"
+        "description": "Beschreibung der About Seite",
+        "interpolated": "Interpolierte Nummer - {{val}} wurde hinzugefügt."
       }
     }
   },
