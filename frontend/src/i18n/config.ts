@@ -17,8 +17,8 @@ export const supportedLngs = {
   de: 'Deutsch',
 };
 
-import translationEN from '../../public/locales/en/translation.json';
-import translationDE from '../../public/locales/de/translation.json';
+import translationEN from '../locales/en/translation.json';
+import translationDE from '../locales/de/translation.json';
 
 i18n
   .use(Backend)
