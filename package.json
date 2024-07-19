@@ -9,7 +9,8 @@
     "dev-frontend": "cd frontend && yarn dev",
     "build-frontend": "cd frontend && yarn build",
     "lint-frontend": "cd frontend && yarn lint",
-    "preview-frontend": "cd frontend && yarn preview"
+    "preview-frontend": "cd frontend && yarn preview",
+    "docs:frontend": "cd frontend && yarn docs"
   },
   "author": "jteske",
   "license": "ISC",

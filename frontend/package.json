@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "yarn tsc -b && vite build",
+    "tsc": "tsc",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "docs": "typedoc"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
@@ -39,6 +41,7 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
     "tsc": "^2.0.4",
+    "typedoc": "^0.26.4",
     "typescript": "^5.2.2",
     "vite": "^5.3.1"
   }
