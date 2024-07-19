@@ -4,12 +4,12 @@
   "description": "- [vite](https://vitejs.dev/guide/) + [react](https://react.dev/reference/react)\r - [mui Material UI](https://mui.com/material-ui/getting-started/)",
   "main": "index.js",
   "scripts": {
-    "dev-server": "cd server && yarn dev",
-    "start-server": "cd server && yarn start",
-    "dev-frontend": "cd frontend && yarn dev",
-    "build-frontend": "cd frontend && yarn build",
-    "lint-frontend": "cd frontend && yarn lint",
-    "preview-frontend": "cd frontend && yarn preview",
+    "dev:server": "cd server && yarn dev",
+    "start:server": "cd server && yarn start",
+    "dev:frontend": "cd frontend && yarn dev",
+    "build:frontend": "cd frontend && yarn build",
+    "lint:frontend": "cd frontend && yarn lint",
+    "preview:frontend": "cd frontend && yarn preview",
     "docs:frontend": "cd frontend && yarn docs"
   },
   "author": "jteske",
