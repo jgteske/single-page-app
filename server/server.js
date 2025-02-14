@@ -5,6 +5,7 @@ console.log(`NODE_ENV: ${process.env.NODE_ENV}`);
 if (process.env.NODE_ENV !== 'production') {
   require('dotenv').config();
 }
+const path = require('path');
 
 const logger = require('./logger');
 const express = require('express');
@@ -15,7 +16,10 @@ const {
   checkAuthMiddleware,
 } = require('./middleware/authentication');
 
-const port = process.env.BACKEND_PORT || 5000;
+const port = process.env.PORT || 5000;
+
+// Set static folder
+app.use(express.static(path.join(__dirname, 'public')));
 
 // body parsers
 // create application/json parser
