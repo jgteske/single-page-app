@@ -1,0 +1,12 @@
+name: single-page-app
+
+services:
+  app:
+    image: single-page-app:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - PORT=5001
+    ports:
+      - '8001:5001'

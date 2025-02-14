@@ -16,7 +16,7 @@ const {
   checkAuthMiddleware,
 } = require('./middleware/authentication');
 
-const port = process.env.BACKEND_PORT || 5000;
+const port = process.env.PORT || 5000;
 
 // Set static folder
 app.use(express.static(path.join(__dirname, 'public')));
